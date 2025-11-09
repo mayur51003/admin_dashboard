@@ -1,0 +1,627 @@
+{
+    "response": {
+        "totalRecords": 31,
+        "list": [
+            {
+                "id": "568a9ea8-8375-4135-96e0-195a2fd395b4",
+                "userName": "testuser10@yopmail.com",
+                "firstName": "Akshay",
+                "lastName": "dhengre",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser10@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-03-13T11:54:01.7206565",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "48a45a22-8c34-440f-9902-6c3c36651f84",
+                "userName": "akshay@yopmail.com",
+                "firstName": "Akshay",
+                "lastName": "Dhengre",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "akshay@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2025-05-21T10:25:42.8457043",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "43be2f3a-42de-4e7f-b32f-ce2376e25dd0",
+                "userName": "bharat4@yopmail.com",
+                "firstName": "bharat",
+                "lastName": "wakade",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "bharat4@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-07-26T09:41:09.3853762",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "25c4a4fb-f7a8-478a-ac62-314702871faa",
+                "userName": "johndoe@yopmail.com",
+                "firstName": "John",
+                "lastName": "Doe",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "johndoe@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-09-23T06:33:54.7810615",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "66c35f82-7f0e-47f3-8e2b-84c0373247f9",
+                "userName": "testuser101@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 101",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser101@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2025-09-09T07:32:27.8963745",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "4eafbbfc-7fc8-401b-b7c0-49d355688f5e",
+                "userName": "testuser11@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 11",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser11@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-04-03T10:44:02.9681717",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "287f763e-f67d-42b4-95c4-7bdb55abfedf",
+                "userName": "testuser13@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 13",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser13@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Inactive",
+                "createdDate": "2024-08-23T05:30:55.8195866",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "13b9127a-fd8e-4baf-b5a3-960f8dbc7c69",
+                "userName": "testuser14@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 14",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser14@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Inactive",
+                "createdDate": "2024-09-05T09:18:28.5483741",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "4bc03262-6af6-4be9-8a17-f83c8db53fc4",
+                "userName": "testuser15@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 15",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser15@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Inactive",
+                "createdDate": "2024-09-20T07:04:55.6785783",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "021e2d0b-7b9f-48e9-84c9-1e7ae0850cd7",
+                "userName": "testuser18@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 18",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser18@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2025-07-23T11:59:35.6797086",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "36e61d40-ee65-4e83-8d96-36f48bd87e75",
+                "userName": "testuser2@yopmail.com",
+                "firstName": "test",
+                "lastName": "user 2",
+                "photo": {
+                    "id": 0,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser2@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Deleted",
+                "userSubscriptionStatus": "Inactive",
+                "createdDate": "2023-11-03T08:38:13.0057819",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": true,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "40f0b097-49c0-4ace-a90e-ac09f71ca95b",
+                "userName": "testuser6@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 6",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser6@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Deleted",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2023-12-15T08:56:48.7318779",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": true,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "04f363e5-cc94-4ea6-b41c-d5c9c18c86fd",
+                "userName": "testuser8@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 8",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser8@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Deleted",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-02-29T05:09:57.7037153",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": true,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "04f363e5-cc94-4ea6-b41c-d5cd9c18c86f",
+                "userName": "testuser8@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 8",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser8@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Deleted",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-02-29T05:09:57.7037153",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": true,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "04f363e5-cc94-4ea6-b41c-dc86fd5c9c18c86",
+                "userName": "testuser8@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 8",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser8@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Deleted",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-02-29T05:09:57.7037153",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": true,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "bdff49ea-e355-41ba-82ad-ffc1a6da23a4",
+                "userName": "abubakr.sadiqi2023@yopmail.com",
+                "firstName": "Abu bakr",
+                "lastName": "sadiqi",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "abubakr.sadiqi2023@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-07-25T16:40:10.2456875",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "9536f55d-b093-4d34-b508-14f08f6f94af",
+                "userName": "akshay19@yopmail.com",
+                "firstName": "Akshay",
+                "lastName": "Dhengre",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "akshay19@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2025-05-21T11:01:15.5702666",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "9c86645a-c8f3-4ef5-85fe-ecba865b9e98",
+                "userName": "dev.thinkersteps@yopmail.com",
+                "firstName": "Dev",
+                "lastName": "Thinker",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "dev.thinkersteps@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2025-01-10T11:55:49.5338709",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": true,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "b6bdc77d-bbeb-4376-b4d3-8efa89abef24",
+                "userName": "maxdoe@yopmail.com",
+                "firstName": "Max",
+                "lastName": "Doe",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "maxdoe@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-09-23T07:03:11.8619262",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "8928229b-f773-40e6-9223-ac60c3b92c9b",
+                "userName": "test000@yopmail.com",
+                "firstName": "Test",
+                "lastName": "New",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "test000@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-02-14T14:27:45.1739569",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "92c14a13-0bde-4249-8687-f97194e0e0c6",
+                "userName": "testuser7@yopmail.com",
+                "firstName": "Test",
+                "lastName": "U8ser 7",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser7@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Deleted",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-02-14T05:48:08.0151284",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": true,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "ef36ab37-16cb-4ac1-a1fb-622e0af44b37",
+                "userName": "testuser@yopmail.com",
+                "firstName": "test",
+                "lastName": "user",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Inactive",
+                "createdDate": "2023-10-27T14:43:13.7020568",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "e91acee3-7442-4fe7-95b6-c2413f56a4b3",
+                "userName": "testuser3@yopmail.com",
+                "firstName": "test",
+                "lastName": "User",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser3@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Deleted",
+                "userSubscriptionStatus": "Inactive",
+                "createdDate": "2023-11-09T11:31:31.1657537",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": true,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "9d0856df-e07f-47c6-b667-e4d7ae10fc58",
+                "userName": "testuser12@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser12@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-07-18T10:06:43.4807531",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "e1e56545-c8c3-4918-952b-0ea30c7238dc",
+                "userName": "testuser1@yopmail.com",
+                "firstName": "test",
+                "lastName": "user 1",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser1@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Inactive",
+                "createdDate": "2023-11-03T05:37:50.4028669",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "95a8fb27-407a-4462-9526-cdb83a80b4c7",
+                "userName": "testuser16@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 16",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser16@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-10-02T05:42:03.6274479",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "d69e750c-c740-4bb9-aafd-9650d58abf5c",
+                "userName": "testuser17@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 17",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser17@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-12-03T06:58:14.3376441",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "ff7b9856-8d13-4e7d-910f-ad416aa02b38",
+                "userName": "testuser5@yopmail.com",
+                "firstName": "test",
+                "lastName": "user 5",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser5@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Deleted",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2023-12-01T10:16:08.3873147",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "7fd20d81-5112-46e8-b3e8-71ac3d16a9bb",
+                "userName": "testuser9@yopmail.com",
+                "firstName": "Test",
+                "lastName": "User 9",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser9@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2024-03-13T11:21:26.7398634",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "965b11f6-c783-482a-9673-2c0bd0422e57",
+                "userName": "tester.thinkersteps@yopmail.com",
+                "firstName": "Tester",
+                "lastName": "Thinkerstep",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "tester.thinkersteps@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Active",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2025-03-11T10:02:41.3738251",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            },
+            {
+                "id": "ff88c8b6-199f-48a1-bee2-169531fb6792",
+                "userName": "testuser4@yopmail.com",
+                "firstName": "Test",
+                "lastName": "Uer 4",
+                "photo": {
+                    "id": null,
+                    "mainUrl": null,
+                    "editedUrl": null,
+                    "thumbUrl": null
+                },
+                "email": "testuser4@yopmail.com",
+                "userRole": "App User",
+                "userStatus": "Deleted",
+                "userSubscriptionStatus": "Trial",
+                "createdDate": "2023-11-30T13:41:21.7090883",
+                "planExpireDate": "0001-01-01T00:00:00",
+                "isDeleteTimeExtended": false,
+                "downloadFoldersLists": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,237 @@
+<div class="container">
+  <!-- Sidebar Card -->
+  <div class="sidebar-card" [class.collapsed]="isCollapsed">
+    <div class="header" *ngIf="!isCollapsed">
+      <h3>UserList</h3>
+      <select class="status-dropdown" [(ngModel)]="selectedStatus" (change)="onStatusChange()">
+        <option value="all">Status</option>
+        <option value="active">Active</option>
+        <option value="Inactive">Inactive</option>
+        <option value="deleted">Deleted</option>
+        <option value="members">Members</option>
+      </select>
+    </div>
+
+    <div *ngIf="!isCollapsed" class="search-container">
+      <input type="text" placeholder="search..." class="search" [(ngModel)]="searchText" />
+
+      <i *ngIf="searchText" class="bi bi-x-circle-fill"
+        style="position: absolute; right: 55px; cursor: pointer; font-size: 10px; color: #9ca3af;"
+        (click)="clearSearch()"></i>
+
+      <button class="search-btn" (click)="onSearchClick()">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+
+    <div class="user-list" *ngIf="!isCollapsed">
+      <!-- Loading State -->
+      <div *ngIf="isLoading" class="loading-state">
+        <p>Loading...</p>
+      </div>
+
+      <!-- Actual List -->
+      <div *ngIf="!isLoading">
+        <div *ngFor="let user of filteredUsers" class="user-item" [class.deleted]="user.userStatus === 'Deleted'"
+          [class.active]="selectedUser?.id === user.id" (click)="selectUser(user)">
+          <div class="user-avatar">
+            <img src="/assets/user-image.png">
+          </div>
+          <div class="user-info">
+            <div class="user-name">{{ user.firstName }} {{ user.lastName }}</div>
+            <div class="user-email">{{ user.email }}</div>
+          </div>
+        </div>
+        <div *ngIf="filteredUsers.length === 0" class="no-results">No users found</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vertical toggle button -->
+  <div class="sidebar-toggle-btn" (click)="toggleSidebar()">
+    <span>User List</span>
+    <i class="bi" [ngClass]="isCollapsed ? 'bi-chevron-down' : 'bi-chevron-up'"></i>
+  </div>
+  <div class="main" [class.collapsed]="isCollapsed">
+
+    <div class="content-wrapper">
+      <div class="userdetail">
+        <!-- Header Section -->
+        <div class="detail-header">
+          <h2>User Details</h2>
+          <button class="deactivate-btn" *ngIf="selectedUser"> DEACTIVATE</button>
+        </div>
+
+        <!-- User Profile Section -->
+        <div class="user-profile">
+          <div class="profile-avatar" [class.no-user]="!selectedUser">
+            <img src="/assets/user-image.png" *ngIf="selectedUser">
+            <i class="bi bi-person-circle" *ngIf="!selectedUser"></i>
+          </div>
+          <div class="profile-info">
+            <div *ngIf="!selectedUser" class="no-user-message">
+              No User is selected. Please select a user to view their details.
+            </div>
+
+            <div *ngIf="selectedUser">
+              <div class="user-name-large">
+                {{ selectedUser.firstName }} {{ selectedUser.lastName }}
+              </div>
+              <div class="user-email-large">
+                {{ selectedUser.email }}
+              </div>
+              <div class="membership-dates">
+                <div class="date-item">
+                  <label>Membership Start Date</label>
+                  <span>{{ selectedUser.membershipStartDate || 'NA' }}</span>
+                </div>
+                <div class="date-item">
+                  <label>Membership End Date</label>
+                  <span>{{ selectedUser.membershipEndDate || 'NA' }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="userdetail-tabs">
+        <div class="tabs-container">
+          <div class="tabs">
+            <button class="tab" [class.active]="activeTab === 'info'" [disabled]="!selectedUser"
+              (click)="activeTab = 'info'">
+              User Information
+            </button>
+            <button class="tab" [class.active]="activeTab === 'membership'" [disabled]="!selectedUser"
+              (click)="activeTab = 'membership'">
+              Membership
+            </button>
+            <button class="tab" [class.active]="activeTab === 'transactions'" [disabled]="!selectedUser"
+              (click)="activeTab = 'transactions'">
+              Transaction History
+            </button>
+          </div>
+        </div>
+
+        <!-- Stats Section (User Information Tab) -->
+        <div class="stats-container" *ngIf="activeTab === 'info'">
+          <div class="stat-item">
+            <div class="stat-circle posts">
+              <div class="stat-number" *ngIf="selectedUser">{{ selectedUser.photosCount || 1 }}</div>
+              <div class="stat-label">Photos</div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-circle albums">
+              <div class="stat-number" *ngIf="selectedUser">{{ selectedUser.albumsCount || 21 }}</div>
+              <div class="stat-label">Albums</div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-circle keepers">
+              <div class="stat-number" *ngIf="selectedUser">{{ selectedUser.keepersCount || 0 }}</div>
+              <div class="stat-label">Keepers</div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-circle tags">
+              <div class="stat-number" *ngIf="selectedUser">{{ selectedUser.tagsCount || 0 }}</div>
+              <div class="stat-label">Tags</div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-circle profiles">
+              <div class="stat-number" *ngIf="selectedUser">{{ selectedUser.profilesCount || 1 }}</div>
+              <div class="stat-label">Profiles</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membership Tab Content -->
+        <div *ngIf="activeTab === 'membership' && selectedUser" class="tab-content">
+          <div class="membership-card">
+            <div class="card-header">
+              <h3>Plan Validity</h3>
+            </div>
+
+            <div class="card-content">
+              <div class="validity-circle-container">
+                <div class="validity-circle">
+                  <div class="progress-circle" [style.--progress]="progressPercentage + '%'"></div>
+                  <div class="validity-content">
+                    <div class="validity-number">{{ selectedUser?.planValidity || '191' }}</div>
+                    <div class="validity-label">Days</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="membership-info">
+                <div class="info-row">
+                  <div class="info-label">Membership:</div>
+                  <div class="info-value">{{ selectedUser?.membershipType || 'Annual' }}</div>
+                </div>
+                <div class="info-row">
+                  <div class="info-label">Renewed on:</div>
+                  <div class="info-value">{{ selectedUser?.renewedDate || 'Apr 06, 2025' }}</div>
+                </div>
+                <div class="info-row">
+                  <div class="info-label"></div>
+                  <div class="info-value">{{ selectedUser?.renewedTime || '4:01AM' }}</div>
+                </div>
+                <div class="info-row">
+                  <div class="info-label">Expires on:</div>
+                  <div class="info-value">{{ selectedUser?.expiryDate || 'Apr 06, 2026' }}</div>
+                </div>
+                <div class="info-row">
+                  <div class="info-label"></div>
+                  <div class="info-value">{{ selectedUser?.expiryTime || '4:01AM' }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transaction History Tab Content -->
+        <div *ngIf="activeTab === 'transactions'" class="tab-content">
+          <div class="table-container">
+            <table class="transaction-table">
+              <thead>
+                <tr>
+                  <th>Transaction ID <i class="bi bi-arrow-down-up"></i></th>
+                  <th>Product ID <i class="bi bi-arrow-down-up"></i></th>
+                  <th>Transaction Date <i class="bi bi-arrow-down-up"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5000694206753</td>
+                  <td>annually_auto_renewable</td>
+                  <td>2025-04-06 04:01 AM</td>
+                </tr>
+                <tr>
+                  <td>5000986514459</td>
+                  <td>annually_auto_renewable</td>
+                  <td>2024-04-06 04:01 AM</td>
+                </tr>
+                <tr>
+                  <td>5000033602464</td>
+                  <td>annually_auto_renewable</td>
+                  <td>2023-04-06 04:01 AM</td>
+                </tr>
+                <tr>
+                  <td>5000804503706</td>
+                  <td>annually_auto_renewable</td>
+                  <td>2022-04-06 04:01 AM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
